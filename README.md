@@ -1,61 +1,63 @@
-# Simulador_Tanques
-🎮 Simulación de Batalla de Tanques - WWII
-📖 Descripción
-Este proyecto es una simulación por turnos de una batalla entre tanques Tiger Alemán y T34 Ruso durante la Segunda Guerra Mundial.
-El sistema genera una cantidad aleatoria de tanques, simula un combate realista con mecánicas de disparo y precisión, y muestra un resumen final del estado de los tanques.
+# 🎮 Simulador de Batalla de Tanques - WWII
 
-🛠️ Tecnologías Utilizadas
-Java
+## 📖 Descripción
+Este proyecto simula por turnos una batalla entre **tanques Tiger Alemán** y **T34 Ruso** durante la Segunda Guerra Mundial.  
 
-NetBeans
+El sistema genera una cantidad aleatoria de tanques, simula un combate con mecánicas de **disparo y precisión**, y muestra un **resumen final del estado de los tanques**.
 
-ArrayList (sin uso de arreglos [])
+---
 
-Generación de valores aleatorios mediante la clase Generador
+## 🛠️ Tecnologías Utilizadas
+- **Java**  
+- **NetBeans**  
+- **ArrayList** (sin uso de arreglos `[]`)  
+- Generación de valores aleatorios mediante la clase `Generador`
 
-🎯 Funcionalidades
-✅ Crear Tanques
-Genera entre 10 y 20 tanques al azar.
+---
 
-Mitad Tiger, mitad T34.
+## 🎯 Funcionalidades
 
-Se almacenan en ArrayList<Tiger> y ArrayList<T34>.
+### ✅ Crear Tanques
+- Genera entre **10 y 20 tanques** aleatorios.  
+- Mitad **Tiger**, mitad **T34**.  
+- Se almacenan en `ArrayList`.  
+- Se imprimen todos los atributos de cada tanque creado.
 
-Se imprimen todos los atributos de cada tanque creado.
+### ✅ Simular Batalla por Turnos
+- Primero disparan los **T34**, luego los **Tiger**.  
+- Solo disparan los **tanques vivos y con munición**.  
+- **Precisión de disparo:**  
+  - Tiger: 50%  
+  - T34: 33%  
+- Se registra qué tanque destruye a otro.
 
-✅ Simular Batalla
-Turnos: primero disparan los T34, luego los Tiger.
+### ✅ Imprimir Estado Final
+- Muestra el estado de todos los tanques.  
+- Resumen de **vivos y muertos por tipo**.
 
-Solo disparan tanques vivos y con munición.
+---
 
-Los Tiger tienen 50% de precisión.
+## 📦 Estructura del Proyecto
 
-Los T34 tienen 1/3 de precisión.
-
-Se registra el tanque que destruye a otro.
-
-✅ Imprimir Estado Final
-Muestra el estado de todos los tanques.
-
-Resumen de vivos y muertos por tipo.
-
-📦 Estructura del Proyecto
-text
-SimulacionTanques/
+SimuladorTanques/
 ├── src/
-│   ├── Simulación.java
-│   ├── Tanque.java
-│   ├── Tiger.java
-│   ├── T34.java
-│   └── Generador.java
+│ ├── Simulacion.java
+│ ├── Tanque.java
+│ ├── Tiger.java
+│ ├── T34.java
+│ └── Generador.java
 ├── build/
 ├── dist/
 └── README.md
-▶️ Cómo Ejecutar
-Abre el proyecto en NetBeans.
 
-Compila el proyecto (debe compilar sin errores).
+yaml
+Copiar código
 
-Ejecuta la clase Simulación.
+---
 
-Observa la salida en consola con la simulación completa.
+## ▶️ Cómo Ejecutar
+
+1. Abre el proyecto en **NetBeans**.  
+2. Compila el proyecto (debe compilar sin errores).  
+3. Ejecuta la clase `Simulacion.java`.  
+4. Observa la **salida en consola** con la simulación completa.
