@@ -50,8 +50,6 @@ SimuladorTanques/
 ├── dist/
 └── README.md
 
-yaml
-Copiar código
 
 ---
 
